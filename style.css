@@ -1,0 +1,132 @@
+/*========IMPORTS========*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap');
+
+
+/*========ANIMATIONS======*/
+
+@keyframes click {
+    from{
+        background-color: burlywood;
+    }
+
+    to{
+        
+    }
+}
+
+@keyframes showUp {
+    from{
+        opacity:0;
+        transform: translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform: translateY(0)
+    }
+}
+
+/*=========BODY========*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color:rgb(99, 235, 245);
+}
+
+#main-area{
+    height: 70%;
+    width: 35%;
+    border: 3px solid black;
+    border-radius: 5px;
+
+    background-color:white;
+
+    font-family: 'Open Sans Condensed';
+    font-size:1.5em;
+    text-align: center;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-shadow: 1px 15px 35px black;
+}
+
+#title{
+    margin-bottom:20px
+}
+
+#text-camp{
+    border: none;
+    border-bottom: 2px solid black;
+    outline:none;
+
+    width: 400px;
+    height: 50px;
+
+    font-size: 1.2em;
+    padding: 12px;
+    
+}
+
+::-webkit-input-placeholder {
+    opacity: 0.5;
+}
+
+
+#convert-button{
+    width: 100px;
+    height: 40px;
+
+    background-color:white;
+    border-radius: 8px;
+    margin:30px;
+
+    transition: 300ms;
+}
+
+#convert-button:hover{
+    box-shadow: 1px 1px 5px black;
+}
+
+#text-area{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/*========FORMAT AREA========*/
+
+#format-area{
+    display: none
+}
+
+.format-button{
+    margin: 12px;
+    
+    height: 40px;
+    width: 40px;
+    
+    font-size: 0.6em;
+
+    background-color:white;
+    border:none;
+    border-bottom: 1px solid black;
+
+    transition:300ms
+    
+}
+
+.format-button:hover{
+    box-shadow: 0px 2px black;
+    cursor: pointer;
+}
